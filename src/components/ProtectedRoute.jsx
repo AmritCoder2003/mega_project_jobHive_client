@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setUser } from "../Redux/userRedux";
 import axios from "axios";
+import PropTypes from "prop-types";
 
 
 const ProtectedRoute = ({ element }) => {
@@ -50,5 +51,10 @@ const ProtectedRoute = ({ element }) => {
     return <Navigate to="/login" />;
   }
 };
+
+ProtectedRoute.propTypes = {
+  element: PropTypes.node.isRequired,
+};
+
 
 export default ProtectedRoute;
