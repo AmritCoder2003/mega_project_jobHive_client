@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-white shadow dark:bg-pink-900 ">
+    <footer className="bg-white shadow dark:bg-blue-900 ">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
@@ -15,12 +15,12 @@ const Footer = () => {
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              JobHive
+              TechHire
             </span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <a href="/about" className="hover:underline me-4 md:me-6">
                 About
               </a>
             </li>
@@ -35,7 +35,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/contact" className="hover:underline">
                 Contact
               </a>
             </li>
@@ -45,7 +45,7 @@ const Footer = () => {
         <span className="block text-sm text-white sm:text-center dark:text-white">
           © 2024{" "}
           <a href="/" className="hover:underline">
-            JobHive Inc
+            TechHire Inc
           </a>
           . All Rights Reserved.
         </span>
